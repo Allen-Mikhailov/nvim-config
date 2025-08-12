@@ -54,9 +54,8 @@ require("neo-tree").setup({
       enable = true,
     },
     window = {
-      fuzzy_finder_mappings = { -- define keymaps for filter popup window in fuzzy_finder_mode
-      }
-}
+      fuzzy_finder_mappings = {} -- define keymaps for filter popup window in fuzzy_finder_mode  
+	},
     
 	filtered_items = {
 		visible = true, -- If set to true, "hide" means "dimmed out"
