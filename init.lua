@@ -73,3 +73,4 @@ vim.api.nvim_create_autocmd("VimEnter", {
 		vim.cmd("set shiftwidth=4")
 	end,
 })
+
