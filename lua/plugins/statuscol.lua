@@ -6,7 +6,7 @@ return {
 
       require("statuscol").setup({
         -- relculright = true,
-		ft_ignore = { "neo-tree", "Neotree" },  -- ← THIS FIXES IT
+		ft_ignore = { "neo-tree", "Neotree" },  --  THIS FIXES IT
         segments = {
           { sign = { name = { ".*" } }, click = "v:lua.ScSa" },
           { text = { builtin.lnumfunc }, click = "v:lua.ScLa" },

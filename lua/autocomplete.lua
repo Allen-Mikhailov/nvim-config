@@ -59,11 +59,13 @@ cmp.setup({
 })
 
 -- Setup LSP capabilities
-local capabilities = require("cmp_nvim_lsp").default_capabilities()
-
 -- Enable clangd for C/C++
 require("lspconfig").clangd.setup({
-	capabilities = capabilities,
+	capabilities = require("cmp_nvim_lsp").default_capabilities(),
+})
+
+require("lspconfig").pyright.setup({
+	capabilities = require("cmp_nvim_lsp").default_capabilities(),
 })
 
 -- Auto-show diagnostics in a floating window on hover
