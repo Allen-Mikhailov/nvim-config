@@ -64,9 +64,16 @@ require("lspconfig").clangd.setup({
 	capabilities = require("cmp_nvim_lsp").default_capabilities(),
 })
 
+-- Python
 require("lspconfig").pyright.setup({
 	capabilities = require("cmp_nvim_lsp").default_capabilities(),
 })
+
+
+
+-- require("lspconfig").ts_ls.setup({
+--	capabilities = require("cmp_nvim_lsp").default_capabilities(),
+-- })
 
 -- Auto-show diagnostics in a floating window on hover
 vim.o.updatetime = 250 -- time in ms before CursorHold fires
